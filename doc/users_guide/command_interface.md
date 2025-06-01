@@ -1,6 +1,6 @@
 # Controlling ratpac-two 
 
-This section of the guide will provide a high level overview on how to control and use ratpac by briefly describing basic command structure, its syntax and how to synthesize commands into a macro file to control the operation of the software. 
+This section of the guide will provide a high level overview of how to control and use ratpac by briefly describing basic command structure, its syntax and how to synthesize commands into a macro file to control the operation of the software.
 A comprehensive review requires extensive knowledge of the software, so we aim to provide just enough detail to provide context for the following chapters in the user guide.
 Revisiting this section is recommended as you read through the documentation.
 
@@ -12,7 +12,7 @@ ratpac-two is typically controlled through the use of macro files, which are pla
 * Primary particle sources (event generators).
 * Run-specific parameters like the number of events and random number seeds.
 
-At a high level the simulation itself a **pipeline** connecting an event **producers** to a sequence of **processors**. 
+At a high level, the simulation itself is a **pipeline** connecting an event **producers** to a sequence of **processors**.
 Producers create or load events and then hand each event to the processors one-by-one. 
 Each processor can modify the event, record information, or simply observe it. 
 The order of processors you declare therefore determines how every event will be handled. 
