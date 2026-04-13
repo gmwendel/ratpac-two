@@ -55,7 +55,7 @@ def merge_holes(list_of_lists):
 
     # Merge all these lists into one list.  Require that
     # for each slot there is either zero or one entry.
-    for i in xrange(max_len):
+    for i in range(max_len):
         # Filter out non-null 
         non_null = [ entry[i] for entry in list_of_lists 
                      if i < len(entry) and entry[i] is not None ]
@@ -106,7 +106,7 @@ def create_evaluation_tree(*selectors):
         node.slot = slot
 
     # remove unnecessary empty top node
-    if len(root.child) == 0:
+    if len(root.child) == 1:
         return root.child[0]
     else:
         return root
